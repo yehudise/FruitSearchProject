@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+  /* TODO */
+  outline: none;
+}
+
+body {
+  /* TODO */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: linear-gradient(
+    0.25turn,
+    #fff200,
+    35%,
+    rgb(255, 106, 0)
+  ); /* Gradient for the overall page background - got from mdn */
+  font-family: "Arial", sans-serif;
+}
+
+input {
+  /* TODO */
+  font-family: "Arial", sans-serif;
+  padding: 10px;
+  width: 200px; /* Adjust the width as needed */
+}
+
+.search-container {
+  /* TODO */
+  /* with this one the bpx goes into the senter of the page but then makes the list dissapear  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  /* with this one the box is at the top of the page but the list stays up*/ /*width: 20%;
+  margin: auto;
+  position: relative;
+  text-align: center;  */
+}
+
+.search-container input,
+.search-container .suggestions {
+  /* text-align: center; */
+  /* TODO */
+  width: 100%;
+}
+
+.search-container input {
+  /* TODO */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container .suggestions {
+  /* TODO */
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(243, 125, 7, 0.795);
+  border: 1px solid rgba(243, 125, 7, 0.795);
+  border-top: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+ul {
+  /* TODO */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.has-suggestions {
+  /* TODO */
+  display: block;
+}
+
+ul li {
+  /* TODO */
+  padding: 10px;
+  cursor: pointer;
+}
+
+ul li:hover {
+  /* TODO */
+  background-color: #ffa600;
+}
+
+input {
+  /* TODO */
+  outline: none;
+}
