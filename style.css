@@ -20,6 +20,9 @@ body {
     rgb(255, 106, 0)
   ); /* Gradient for the overall page background - got from mdn */
   font-family: "Arial", sans-serif;
+  justify-content: center;
+  /* display: flex;
+  align-items: center; */
 }
 
 input {
@@ -32,11 +35,8 @@ input {
 .search-container {
   /* TODO */
   /* with this one the bpx goes into the senter of the page but then makes the list dissapear  */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   position: relative;
+  margin-top: 50%;
   /* with this one the box is at the top of the page but the list stays up*/ /*width: 20%;
   margin: auto;
   position: relative;
